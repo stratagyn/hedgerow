@@ -1,14 +1,12 @@
 # `hedgerow`
 
-`hedgerow` is a small library written in TypeScript for constructing polymorphic functions on constrained sequences of arguments. These sequences of arguments being referred to as *hedges* or *hedge variables*. This means all parameters have a `range` property and all functions on these parameters are functions on sequences of arrays.
+`hedgerow` is a small library written in TypeScript for constructing polymorphic functions on constrained sequences of arguments. These sequences of arguments being referred to as *hedges* or *hedge variables*. This means all parameters have a `range` property and all functions on these parameters are functions on sequences of arrays. Refer to the [documentation](https://github.com/stratagyn/hedgerow/blob/master/documentation.pdf) for further guidance and examples.
 
 ### Installation
 
 ```
 npm install hedgerow
 ```
-
-Documentation can be found in `documentation.pdf`.
 
 ### A First Example:
 
