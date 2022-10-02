@@ -1,0 +1,20 @@
+{
+  "name": "hedgerow",
+  "version": "0.1.0",
+  "description": "dynamic polymorphism on constrained sequences of variables",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf .\\dist",
+    "build": "npm run clean && tsc && npm run test",
+    "test": "jest"
+  },
+  "author": "stratagyn",
+  "license": "GPL-3.0-or-later",
+  "devDependencies": {
+    "@types/jest": "^28.1.6",
+    "@types/node": "^18.7.5",
+    "rimraf": "^3.0.2",
+    "ts-jest": "^28.0.7",
+    "ts-node": "^10.9.1"
+  }
+}
