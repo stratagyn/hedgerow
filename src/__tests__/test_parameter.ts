@@ -19,7 +19,7 @@ const Parameters = {
     optionalParameter: new Parameter({in: "object", range: [0, 1]}),
     parentSubtypeParameter: new Parameter({in: Parent}),
     parentParameter: new Parameter({in: "Parent!"}),
-    childOnlyParameter: new Parameter({in: "Parent?"}),
+    childOnlyParameter: new Parameter({in: "Parent:"}),
     variadicParameter: variadic(),
     voidParameter: new Parameter()
 };
@@ -101,7 +101,7 @@ describe("Parameter", () => {
     test("parent with subtypes only param does not accept parent",
         () => expect(Parameters.childOnlyParameter.accepts(parentObject)).toBe(false));
 
-    test("parent with subtypes param does accept child",
+    test("parent with subtypes only param does accept child",
         () => expect(Parameters.childOnlyParameter.accepts(childObject)).toBe(true));
 
     test("natural parameter does not accept negative number",
