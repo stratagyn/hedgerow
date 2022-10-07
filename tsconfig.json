@@ -12,10 +12,10 @@
     "baseUrl": "./src",                                  /* Specify the base directory to resolve non-relative module names. */
 
     /* Emit */
-    "declaration": false,                                /* Generate .d.ts files from TypeScript and JavaScript files in your project. */
-    "declarationMap": false,                             /* Create sourcemaps for d.ts files. */
+    "declaration": true,                                /* Generate .d.ts files from TypeScript and JavaScript files in your project. */
+    "declarationMap": true,                             /* Create sourcemaps for d.ts files. */
     "emitDeclarationOnly": false,                        /* Only output d.ts files and not JavaScript files. */
-    "outDir": "./dist",                                  /* Specify an output folder for all emitted files. */
+    "outDir": "./lib",                                  /* Specify an output folder for all emitted files. */
     "removeComments": true,                              /* Disable emitting comments. */
     "importsNotUsedAsValues": "remove",                  /* Specify emit/checking behavior for imports that are only used for types */
     "noEmitOnError": true,                               /* Disable emitting files if any type checking errors are reported. */
