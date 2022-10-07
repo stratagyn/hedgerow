@@ -1,5 +1,5 @@
 import {Parameter} from "../parameter";
-import {isclosed, isdegenerate, isnatural, isopen, isvoid, variadic} from "../lib";
+import {isclosed, isdegenerate, isnatural, isopen, isvoid, variadic} from "../api";
 
 class Parent { }
 

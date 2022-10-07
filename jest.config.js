@@ -6,12 +6,12 @@ module.exports = {
 
     coveragePathIgnorePatterns: [
         "\\\\node_modules\\\\",
-        ".\\\\__tests__\\\\setup.ts",
+        "*.d.ts",
         ".\\\\src\\\\_cmn_.ts",
         ".\\\\src\\\\_trie_.ts",
         ".\\\\src\\\\index.ts",
-        ".\\\\src\\\\htypes.ts"
-
+        ".\\\\src\\\\htypes.ts",
+        ".\\\\lib\\\\"
     ],
 
     coverageProvider: "v8",

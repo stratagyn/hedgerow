@@ -1,5 +1,5 @@
 import {Parameter} from "../parameter";
-import {op, optional, variadic} from "../lib";
+import {op, optional, variadic} from "../api";
 
 const Operators = {
     add: {

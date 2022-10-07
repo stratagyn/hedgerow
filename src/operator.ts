@@ -9,8 +9,8 @@ import type {
 
 import {invalid, isempty, stringify, wrap} from "./_cmn_";
 import {Parameter, ReturnParameter} from "./parameter";
-import * as $ from "./lib";
-import {isvoid} from "./lib";
+import * as $ from "./api";
+import {isvoid} from "./api";
 
 const validateRegion = <I extends HedgeFn = HedgeFn>(domain: Parameter<number, I>[]):
     Parameter<number, I>[] => {

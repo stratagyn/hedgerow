@@ -5,7 +5,7 @@ import {invalid, isempty} from "./_cmn_";
 import {Trie} from "./_trie_";
 import {Operator} from "./operator";
 import {Parameter} from "./parameter";
-import * as $ from "./lib";
+import * as $ from "./api";
 
 export class PolymorphicOperator {
     readonly #trie: PTrie;
@@ -122,7 +122,6 @@ export class PolymorphicOperator {
     }
 
     static #insertDegenerateParameter = (parameter: Parameter, trie: PTrie): PNode => {
-        console.log("INSERTING DEGENERATE PARAMETER...");
 
         const pmin = parameter.range[0];
 
@@ -134,11 +133,9 @@ export class PolymorphicOperator {
 
         const dgnNode = trie.find(dgf);
 
-        if (dgnNode) {
-            console.log(`FOUND DGN...`);
+        if (dgnNode)
             return PolymorphicOperator.#append(trie.node(parameter), trie,
                 (p, n, t) => t.prepend(p, n), {node: dgnNode, getRef: n => n.previous!});
-        }
 
         const nbr = p => !$.isdegenerate(p) || p.range[0] > pmin
 

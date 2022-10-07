@@ -1,7 +1,7 @@
 {
   "name": "hedgerow",
-  "version": "1.0.2",
-  "description": "dynamic polymorphism on constrained sequences of variables",
+  "version": "1.0.3",
+  "description": "Dynamic polymorphism on constrained sequences of variables",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "files": ["lib/**/*"],
@@ -11,8 +11,6 @@
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
     "lint": "tslint -p tsconfig.json",
     "prepare": "npm run build",
-    "prepublishOnly": "npm run test && npm run lint",
-    "preversion": "npm run lint",
     "test": "jest",
     "version": "npm run format && git add -A src"
   },

@@ -1,4 +1,4 @@
-import {op, optional, pattern, polyop} from "../lib";
+import {op, optional, pattern, polyop} from "../api";
 
 function setupF() {
     const f = polyop();

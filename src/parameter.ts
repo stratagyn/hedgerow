@@ -4,7 +4,7 @@ import type {
 } from "./htypes";
 
 import {has, isempty, issimilar, nameof} from "./_cmn_";
-import * as $ from "./lib"
+import * as $ from "./api"
 
 const parsePrototypes = (...prototypes: Prototype[]): {[key: string]: Trilean} => {
     const parsePrototype = (prototype: Prototype) =>
